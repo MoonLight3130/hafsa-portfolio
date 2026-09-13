@@ -69,9 +69,9 @@ export default function Stats() {
   };
 
   return (
-    <section className="relative z-20 pb-16 lg:pb-24">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+    <section className="relative z-20 pb-12 sm:pb-16 lg:pb-24">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.id || index}
@@ -80,19 +80,21 @@ export default function Stats() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
-              className="group relative bg-[#061412]/80 backdrop-blur-sm border border-white/[0.08] hover:border-[#00E88F]/50 rounded-2xl p-6 sm:p-7 flex items-center gap-5 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(0,232,143,0.12)] cursor-default"
+              className="group relative bg-[#061412]/80 backdrop-blur-sm border border-white/[0.08] hover:border-[#00E88F]/50 rounded-2xl p-4 sm:p-5 lg:p-7 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-5 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(0,232,143,0.12)] cursor-default"
             >
-              {/* Left: Neon Icon Container */}
+              {/* Icon */}
               <div className="shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                {getStatIcon(index)}
+                <div className="w-8 h-8 sm:w-10 sm:h-10 text-[#00E88F]">
+                  {getStatIcon(index)}
+                </div>
               </div>
 
-              {/* Right: Numbers & Label */}
-              <div className="flex flex-col">
-                <span className="text-3xl sm:text-4xl font-bold text-white tracking-tight group-hover:text-[#00E88F] transition-colors duration-200">
+              {/* Numbers & Label */}
+              <div className="flex flex-col min-w-0">
+                <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight group-hover:text-[#00E88F] transition-colors duration-200 leading-none">
                   {stat.number}
                 </span>
-                <span className="text-sm text-gray-300 font-normal mt-0.5 leading-snug">
+                <span className="text-xs sm:text-sm text-gray-300 font-normal mt-1 leading-snug">
                   {stat.label}
                 </span>
               </div>

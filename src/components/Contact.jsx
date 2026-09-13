@@ -101,7 +101,7 @@ export default function Contact() {
       {/* Background ambient glow */}
       <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#00E88F]/[0.035] rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left Column: Contact Information */}
           <motion.div
@@ -180,7 +180,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="lg:col-span-7"
           >
-            <div className="bg-[#061412]/85 backdrop-blur-md border border-white/[0.08] rounded-2xl p-7 sm:p-9 shadow-xl shadow-black/40">
+            <div className="bg-[#061412]/85 backdrop-blur-md border border-white/[0.08] rounded-2xl p-5 sm:p-7 lg:p-9 shadow-xl shadow-black/40">
               <form onSubmit={handleSubmit} className="space-y-5">
                 {/* Status Messages */}
                 {status.success && (
@@ -204,7 +204,7 @@ export default function Contact() {
                   </div>
                 )}
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                   {/* Name Input */}
                   <div>
                     <label htmlFor="name" className="block text-xs font-medium text-gray-300 uppercase tracking-wider mb-2">

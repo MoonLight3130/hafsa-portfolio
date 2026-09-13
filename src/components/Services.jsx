@@ -35,7 +35,7 @@ export default function Services({ setActiveSection }) {
 
   return (
     <section id="services" className="relative py-24 sm:py-32 border-t border-white/[0.05]">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <motion.div
@@ -68,7 +68,7 @@ export default function Services({ setActiveSection }) {
         </div>
 
         {/* 6 Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.id || index}

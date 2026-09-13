@@ -19,7 +19,7 @@ export default function Projects() {
       {/* Background glow */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#00E88F]/[0.025] rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <motion.div
@@ -97,7 +97,7 @@ export default function Projects() {
               </div>
 
               {/* Project Content */}
-              <div className="p-7 sm:p-8 flex-1 flex flex-col justify-between">
+              <div className="p-5 sm:p-7 lg:p-8 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-2.5 group-hover:text-[#00E88F] transition-colors">
                     {project.title}

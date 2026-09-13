@@ -72,9 +72,34 @@ export const portfolioData = {
   ],
 
   about: {
-    title: "Crafting Digital Experiences with Precision",
-    description:
-      "Frontend & Full-Stack Developer Based in India",
+    badge: "Know Me Better",
+    title: "About Me",
+    image: "https://res.cloudinary.com/nmrxsjhh/image/upload/v1789313292/ChatGPT_Image_Sep_13_2026_08_57_37_PM_yu2pgy.png",
+    heading: "I'm Hafsa, a Passionate",
+    highlightRole: "Frontend Engineer",
+    bio1: "I am a passionate Frontend Developer who loves turning ideas into responsive, interactive, and visually engaging web experiences. I work with React.js, Tailwind CSS, JavaScript, Node.js, and MongoDB, focusing on clean code, modern design, and seamless user experiences.",
+    bio2: "I'm always learning, building, and exploring new technologies to create better digital experiences.",
+    statusLabel: "Status",
+    statusText: "Available for Work",
+    statusBadge: "Full-time / Contract",
+    features: [
+      "Specialized in React, Modern JavaScript & UI/UX",
+      "Responsive cross-platform design specialist",
+      "Clean, modular, & maintainable production code",
+      "End-to-end MERN stack web application",
+    ],
+    experience: {
+      role: "Frontend Engineer",
+      company: "PromptLogix",
+      period: "2026 - Present",
+    },
+    education: [
+      {
+        degree: "B.Tech in Computer Science",
+        institution: "MES Institute, Kollam (KTU)",
+        year: "2023–2027",
+      },
+    ],
     highlights: [
       {
         title: "Modern Frontend Architecture",
@@ -83,13 +108,6 @@ export const portfolioData = {
       {
         title: "Full-Stack Integration",
         desc: "Seamlessly connecting frontends with Node.js, Express, MongoDB, and GraphQL APIs.",
-      },
-    ],
-    education: [
-      {
-        degree: "B.Tech in Computer Science",
-        institution: "MES Institute, Kollam (KTU)",
-        year: "2023-2027",
       },
     ],
     interests: ["Design Systems", "Generative AI", "Open Source", "Creative Coding"],

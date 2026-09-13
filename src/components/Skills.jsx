@@ -18,7 +18,7 @@ export default function Skills() {
       {/* Background glow */}
       <div className="absolute top-1/3 right-0 w-80 h-80 bg-[#00E88F]/[0.035] rounded-full blur-[130px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <motion.div
@@ -68,7 +68,7 @@ export default function Skills() {
         </div>
 
         {/* Skills Cards Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 lg:gap-5">
           {filteredSkills.map((skill, index) => (
             <motion.div
               key={skill.name}
@@ -77,20 +77,20 @@ export default function Skills() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.04, duration: 0.4 }}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="group bg-[#061412]/80 backdrop-blur-sm border border-white/[0.08] hover:border-[#00E88F]/50 rounded-xl p-4 sm:p-5 flex items-center justify-between transition-all duration-300 hover:shadow-[0_8px_25px_rgba(0,232,143,0.1)]"
+              className="group bg-[#061412]/80 backdrop-blur-sm border border-white/[0.08] hover:border-[#00E88F]/50 rounded-xl p-3.5 sm:p-5 flex items-center justify-between transition-all duration-300 hover:shadow-[0_8px_25px_rgba(0,232,143,0.1)] overflow-hidden"
             >
-              <div className="flex items-center gap-3">
-                <div className="w-2.5 h-2.5 rounded-full bg-[#00E88F] shadow-[0_0_6px_#00E88F]" />
-                <div>
-                  <h4 className="text-white font-medium text-sm sm:text-base group-hover:text-[#00E88F] transition-colors">
+              <div className="flex items-center gap-2.5 min-w-0 flex-1">
+                <div className="w-2 h-2 shrink-0 rounded-full bg-[#00E88F] shadow-[0_0_6px_#00E88F]" />
+                <div className="min-w-0">
+                  <h4 className="text-white font-medium text-xs sm:text-base group-hover:text-[#00E88F] transition-colors truncate">
                     {skill.name}
                   </h4>
-                  <span className="text-xs text-gray-400 font-normal">
+                  <span className="text-[10px] sm:text-xs text-gray-400 font-normal">
                     {skill.category}
                   </span>
                 </div>
               </div>
-              <span className="text-[11px] px-2 py-0.5 rounded-md bg-[#0a1e1b] text-gray-300 border border-white/[0.06]">
+              <span className="shrink-0 text-[10px] sm:text-[11px] px-1.5 sm:px-2 py-0.5 rounded-md bg-[#0a1e1b] text-gray-300 border border-white/[0.06] ml-1">
                 {skill.level}
               </span>
             </motion.div>

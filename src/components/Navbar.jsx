@@ -60,7 +60,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
           : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex items-center justify-between">
         {/* Left: Script Logo with Green Period */}
         <a
           href="#home"

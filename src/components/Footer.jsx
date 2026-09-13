@@ -28,7 +28,7 @@ export default function Footer({ setActiveSection }) {
 
   return (
     <footer className="relative bg-[#020706] border-t border-white/[0.08] pt-16 pb-12 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-white/[0.06]">
           {/* Logo & Tagline */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
@@ -75,12 +75,10 @@ export default function Footer({ setActiveSection }) {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
           <p>© {new Date().getFullYear()} {personal.name}. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#00E88F] animate-pulse" />
-              <span>Available for select opportunities</span>
-            </span>
-            <span>•</span>
-            <span>Built with React, Node.js & Tailwind</span>
+
+            <span>Powered by
+              •
+              PromptLogix</span>
           </div>
         </div>
       </div>
