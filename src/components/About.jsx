@@ -110,7 +110,7 @@ export default function About({ setActiveSection }) {
                 <div className="p-2.5 rounded-lg bg-[#00E88F]/10 text-[#00E88F]">
                   <GraduationCap className="w-5 h-5" />
                 </div>
-                <span>Education & Credentials</span>
+                <span>Education</span>
               </div>
               <div className="space-y-4">
                 {about.education.map((edu, idx) => (

@@ -74,15 +74,11 @@ export const portfolioData = {
   about: {
     title: "Crafting Digital Experiences with Precision",
     description:
-      "With over a decade of deep involvement in modern web technologies, I focus on turning complex systems into elegant, intuitive, and responsive user experiences.",
+      "Frontend & Full-Stack Developer Based in India",
     highlights: [
       {
         title: "Modern Frontend Architecture",
         desc: "Specialized in React, Next.js, and TypeScript with atomic design systems.",
-      },
-      {
-        title: "Performance & Accessibility",
-        desc: "Obsessed with 60fps animations, Core Web Vitals, and WCAG accessibility standards.",
       },
       {
         title: "Full-Stack Integration",
@@ -91,17 +87,12 @@ export const portfolioData = {
     ],
     education: [
       {
-        degree: "B.S. in Computer Science",
-        institution: "Tech University",
-        year: "2013 - 2017",
-      },
-      {
-        degree: "Advanced Human-Computer Interaction",
-        institution: "Design & UX Institute",
-        year: "2018",
+        degree: "B.Tech in Computer Science",
+        institution: "MES Institute, Kollam (KTU)",
+        year: "2023-2027",
       },
     ],
-    interests: ["Design Systems", "Generative AI", "Micro-animations", "Open Source", "Creative Coding"],
+    interests: ["Design Systems", "Generative AI", "Open Source", "Creative Coding"],
   },
 
   skills: [
